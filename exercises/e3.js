@@ -66,6 +66,25 @@ function getValueWithConditionOne(a, b){
 getValueWithConditionOne(40, 40)
 
 
+const getValueWithConditionTwo = function(a, b) {
+  if(typeof(a) !== 'number'){
+    return `First argumet is not a number`
+  }
+  
+  if(typeof(b) !== 'number'){
+    return `Second argumet is not a number`
+  }
+  
+  if (a === 40 && b === 40 ){
+    return a + b
+  }else{
+    return (a + b) * 2
+  }
+}
+
+getValueWithConditionTwo(20, 30)
+
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
