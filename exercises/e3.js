@@ -49,7 +49,21 @@ doesArrayIncludeItemsBetweenVals(arr, 5, 10)
  */
 
 // Your code goes here...
+function getValueWithConditionOne(a, b){
+  if(typeof(a) !== 'number'){
+    return `First argumet is not a number`
+  }
+  if(typeof(b) !== 'number'){
+    return `Second argumet is not a number`
+  }
+  if (a === 40 && b === 40 ){
+    return a + b
+  }else{
+    return (a + b) * 2
+  }
+}
 
+getValueWithConditionOne(40, 40)
 
 
 
