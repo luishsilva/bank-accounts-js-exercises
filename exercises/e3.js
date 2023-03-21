@@ -84,6 +84,24 @@ const getValueWithConditionTwo = function(a, b) {
 
 getValueWithConditionTwo(20, 30)
 
+const getValueWithConditionThree = (a, b) => {
+  if(typeof(a) !== 'number'){
+    return `First argumet is not a number`
+  }
+  
+  if(typeof(b) !== 'number'){
+    return `Second argumet is not a number`
+  }
+  
+  if (a === 40 && b === 40 ){
+    return a + b
+  }else{
+    return (a + b) * 2
+  }
+}
+
+console.log(getValueWithConditionThree(10, 40))
+
 
 
 // === TEST YOURSELF ===
