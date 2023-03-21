@@ -15,6 +15,20 @@
  */
 
 // Your code goes here...
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2){
+  resVal1 = arr.find(element => element > val1)
+  resVal2 = arr.find(element => element < val2)
+  if( resVal1 != undefined && resVal2 != undefined){
+    return true
+  }else{
+    return false
+  }
+}
+arr = [2,4,2]
+doesArrayIncludeItemsBetweenVals(arr, 3, 5)
+doesArrayIncludeItemsBetweenVals(arr, 5, 10)
+
+
 
 
 
