@@ -15,16 +15,15 @@
  */
 
 // Your code goes here...
-function doesArrayIncludeItemsBetweenVals(arr, val1, val2){
-  resVal1 = arr.find(element => element > val1)
-  resVal2 = arr.find(element => element < val2)
-  if( resVal1 != undefined && resVal2 != undefined){
-    return true
-  }else{
-    return false
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > val1 && arr[i] < val2) {
+      return true;
+    }
   }
+  return false;
 }
-arr = [2,4,2]
+const arr = [2,4,2]
 doesArrayIncludeItemsBetweenVals(arr, 3, 5)
 doesArrayIncludeItemsBetweenVals(arr, 5, 10)
 
@@ -66,7 +65,7 @@ function getValueWithConditionOne(a, b){
 getValueWithConditionOne(40, 40)
 
 
-const getValueWithConditionTwo = function(a, b) {
+const getValueWithConditionTwo = (a, b) => {
   if(typeof(a) !== 'number'){
     return `First argumet is not a number`
   }
@@ -84,7 +83,7 @@ const getValueWithConditionTwo = function(a, b) {
 
 getValueWithConditionTwo(20, 30)
 
-const getValueWithConditionThree = (a, b) => {
+const getValueWithConditionThree = function(a, b) {
   if(typeof(a) !== 'number'){
     return `First argumet is not a number`
   }
@@ -100,7 +99,7 @@ const getValueWithConditionThree = (a, b) => {
   }
 }
 
-console.log(getValueWithConditionThree(10, 40))
+getValueWithConditionThree(10, 40)
 
 
 
