@@ -15,10 +15,10 @@
 
 // Your code goes here
 function logMessage(){
-  console.log('Hello world')
+  console.log('Hello, World!')
 }
 
-console.log(logMessage)
+logMessage()
 
 
 
@@ -54,7 +54,7 @@ logMyMessage('I log my first message!')
 
 // Your code goes here...
 function logMessageWithMyName(name){
-  console.log(`My name is ${name}`)
+  console.log(`My name is ${name}!`)
 }
 
 logMessageWithMyName('Luis')
@@ -75,7 +75,7 @@ logMessageWithMyName('Luis')
 
 // Your code goes here...
 function logMyInfo(name , age ){
-  return `My name is ${name}. I'm ${age} years old!`
+  console.log(`My name is ${name}. I am ${age} years old!`)
 }
 
 logMyInfo('Andrey' , 18 )
