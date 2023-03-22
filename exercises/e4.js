@@ -18,10 +18,8 @@ const splitedName = (str) => ( str.split(' ') )
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
 
-const personAge = function(personObject) {
-  return personObject.age;
-}
-
+personAge = (personObject) => ( personObject.age )
+personAge({ id: 1, name: 'Someone', age: 32})
 
 /** =========================
  * The isNameInArray function takes an array and string of name as the arguments.
