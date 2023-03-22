@@ -28,9 +28,8 @@ personAge({ id: 1, name: 'Someone', age: 32})
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
 
-const isNameInArray = function(arr, name) {
-  return arr.includes(name);
-}
+const isNameInArray = (arr, name) => ( arr.includes(name) )
+isNameInArray(['Jon', 'Michael', 'Andrey'], 'James')
 
 
 /** =========================
