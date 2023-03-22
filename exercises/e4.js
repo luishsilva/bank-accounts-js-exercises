@@ -39,9 +39,9 @@ isNameInArray(['Jon', 'Michael', 'Andrey'], 'James')
  * !!! Hint: There are two functions to refactor !!!
  */
 
-const logSecondsUpToMax = function(max) {
+const logSecondsUpToMax = (max) => {
   let i = 0;
-  const timer = setInterval(function() {
+  const timer = setInterval( () => {
     if (i < max) {
       console.log(++i);
     } else {
@@ -50,6 +50,7 @@ const logSecondsUpToMax = function(max) {
   }, 1000);
 }
 
+logSecondsUpToMax(10)
 
 
 // === TEST YOURSELF ===
