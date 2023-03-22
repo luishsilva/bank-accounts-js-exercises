@@ -12,7 +12,8 @@
  */
 
 // Your code goes here...
-
+const getDiffTwentySeven = (num) => ( num > 27 ? (num - 27) * 2 : 27 - num )
+getDiffTwentySeven(57)
 
 
 
@@ -24,6 +25,9 @@
  */
 
 // Your code goes here
+const sumOfTwoIntegers = (num1, num2) => ( (num1 === num2) ? (num1 + num2) * 3 : (num1 + num2))
+
+sumOfTwoIntegers(1,2)
 
 
 
@@ -38,8 +42,22 @@
  */
 
 // Your code goes here...
+function isOneOfThemOrTheirSumIsFourty(argument1, argument2) {
+  const args = [...arguments]
+  const total = args.reduce((accumulator, currentValue) => accumulator + currentValue,0)
+  if(total === 40){
+    return true
+  }else{
+    const found = args.find(element => element === 40);
+    if(found != undefined){
+      return true
+    }else{
+      return false
+    }
 
-
+  }
+}
+isOneOfThemOrTheirSumIsFourty(13,40)
 
 
 // === TEST YOURSELF ===
